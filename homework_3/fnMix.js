@@ -1,6 +1,6 @@
 const mix = (methods) => {
-  const [alert, confirm, prompt] = methods;
-  [window[alert], window[confirm], window[prompt]] = [window[prompt], window[alert], window[confirm]];
+  const [a, c, p] = methods;
+  [window[a], window[c], window[p]] = [window[p], window[a], window[c]];
 };
 
 mix(["alert", "confirm", "prompt"]);
