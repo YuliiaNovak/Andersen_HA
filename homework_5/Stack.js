@@ -27,7 +27,6 @@ class Stack {
   }
 
   isEmpty() {
-    console.log("isEmpty", this.data.length, !this.data.length);
     return !this.data.length;
   }
 
